@@ -2,27 +2,26 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", serif;
-  color: white;
 }
 /* Navigation bar */
-.navbar {
-  display: flex;
+nav{
+  width: 100vw;
+  height: 60px;
+  background-color: violet;
   position: fixed;
-  column-gap: 30px;
-  border: 1px solid rgba(135, 135, 135, 0.693);
-  justify-content: center;
-  padding: 10px;
-  margin: 5px 25vw;
-  margin-top: 15px;
-  width: 750px;
-  border-radius: 25px;
-  color: white;
-  background-color: rgba(135, 135, 135, 0.693);
-  background-position: 50px;
 }
-.nav-elements {
+.navbar{
+  display: flex;
   list-style: none;
-  font-size: 18px;
+  justify-content: right;
+}
+.nav-items{
+  margin: 15px 2vw;}
+nav ul li a{
+  text-decoration: none;
+}
+a:hover{
+  color: white;
 }
 /* Body */
 body {
