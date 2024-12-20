@@ -19,18 +19,22 @@
   <body>
     <header>
       <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
         <ul class="navbar">
-          <li class="nav-items"><a href="#">Home</a></li>
-          <li class="nav-items"><a href="#">Skills</a></li>
-          <li class="nav-items"><a href="#">Subjects</a></li>
-          <li class="nav-items"><a href="#">Education</a></li>
-          <li class="nav-items"><a href="#">Project</a></li>
-          <li class="nav-items"><a href="#">Contact</a></li>
+          <li class="nav-items"><a href="#home">Home</a></li>
+          <li class="nav-items"><a href="#skills">Skills</a></li>
+          <li class="nav-items"><a href="#education">Education</a></li>
+          <li class="nav-items"><a href="#projects">Projects</a></li>
+          <li class="nav-items"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
+
     <main class="container">
-      <section class="home">
+      <section class="home" id="home">
         <div class="container1">
           <div class="left-element">
             <div id="name">SUBHRA SHAW</div>
@@ -64,7 +68,7 @@
         </div>
       </section>
       <hr class="hr1" />
-      <section class="skills">
+      <section class="skills" id="skills">
         <div class="container2">
           <div class="languages">
             <h2>Languages:</h2>
@@ -157,7 +161,7 @@
         </div>
       </section>
       <hr class="hr1" />
-      <section class="education">
+      <section class="education" id="education">
         <div class="edu-container1">
           <h2>Jadavpur University</h2>
           <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
@@ -231,7 +235,7 @@
         </div>
       </section>
       <hr class="hr1" />
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="proj-container1">
           <div class="canvas"></div>
           <h3 class="proj-title">Document Management System</h3>
@@ -266,7 +270,7 @@
         </div>
       </section>
       <hr class="hr1" />
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="contact-container">
           <div class="wapp">
             <span><i class="fa-brands fa-whatsapp"></i></span>
