@@ -25,7 +25,7 @@ nav {
 }
 
 .nav-items {
-  margin: 0 25px;
+  margin: 0 30px;
 }
 
 nav ul li a {
@@ -54,10 +54,10 @@ a:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   nav {
-    background-color: violet;
-    width: 100%;
+    background-color: black;
+    width: 100vw;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -68,7 +68,7 @@ a:hover {
     top: 60px;
     right: -100%; 
     width: 30vw;
-    height: 50vh;
+    height: 80vh;
     background-color: black;
     justify-content: flex-start;
     align-items: flex-start;
@@ -108,8 +108,8 @@ body {
 /* -----------Home Section------------ */
 
 .container1 {
-  display: grid;
-  grid-template-columns: 70vw auto;
+  display: flex;
+  column-gap: 5vw;
 }
 
 .left-element {
@@ -118,11 +118,10 @@ body {
   height: 60vh;
 }
 .right-element {
-  margin: 22vh 4vw;
-  grid-column-start: 2;
+  margin: 25vh 4vw;
 }
 
-#name {
+.left-element #name {
   font-size: 50px;
 }
 .left-element #name,
@@ -147,18 +146,25 @@ body {
   margin-right: 60px;
   width: 90vw;
 }
-@media (max-width: "593px") {
-  .navbar .menu-toggle {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 25px;
-  }
-  /* .navbar{
-      display: none;
-    } */
+@media (max-width: "881px") {
+  .left-element #name {
+  font-size: 50px;
+}
+  .summary {
+  font-size: 15px;
+  width: 40vw;
+}
+.resume {
+  width: 3cm;
+  height: .8cm;
+  border-radius: 5px;
+  font-size: 10px;
+}
+.left-element {
+  margin: 20vh 8vw;
+  color: white;
+  height: 40vh;
+}
 }
 /* ------End Home ------ */
 
