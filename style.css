@@ -13,7 +13,7 @@ nav {
   position: fixed;
   z-index: 1000; /* Ensures navbar stays on top */
   padding: 0;
-  background-color: black;
+  /* background-color: black; */
   padding-right: 100%;
 }
 
@@ -154,10 +154,7 @@ body {
   font-size: 20px;
 }
 .hr1 {
-  margin-top: 100px;
-  margin-bottom: 50px;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin: 50px 60px;
   width: 90vw;
 }
 @media (max-width: 1100px) {
@@ -274,16 +271,17 @@ body {
 .container2 {
   color: white;
   margin: 0 10vw;
+  height: 75vh;
+  position: relative;
 }
-.lang-container,
-.subj-container {
+.lang-container {
   display: flex;
   align-content: center;
   column-gap: 100px;
   row-gap: 60px;
   flex-wrap: wrap;
   margin: 5vh 10vw;
-  width: 60vw;
+  /* width: 60vw; */
 }
 .lang1,
 .lang2,
@@ -291,13 +289,27 @@ body {
 .lang4,
 .lang5,
 .lang6,
-.lang7 {
+.lang7,
+.lang8,
+.lang9,
+.lang10,
+.lang11,
+.lang12 {
   width: 96px;
 }
+label{
+  color: white;
+}
+h2{
+  color: white;
+  text-align: center;
+  margin: 40px 0;
+}
+
 /* ------End SKILLS-------*/
 
 /* ------Education-------- */
-.education {
+.container3 {
   display: flex;
 }
 .edu-container1,
@@ -308,11 +320,14 @@ body {
   margin-left: 90px;
   row-gap: 10px;
   color: white;
-  height: 68vh;
+  height: 90vh;
   width: 25vw;
   /* border: 1px solid white; */
   display: flex;
   flex-direction: column;
+}
+.edu-container1 h2,.edu-container2 h2,.edu-container3 h2{
+  height: 50px;
 }
 
 /* ------End Education-------- */
