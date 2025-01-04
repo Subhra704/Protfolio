@@ -12,7 +12,7 @@ nav {
   justify-content: center;
   align-items: center;
   position: fixed;
-  z-index: 1000; /* Ensures navbar stays on top */
+  z-index: 999;
   padding: 0;
   /* background-color: black; */
   padding-right: 100%;
@@ -29,6 +29,7 @@ nav {
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.147);
   margin-top: 10px;
+  z-index: 999;
   padding: 0;
 }
 
@@ -490,63 +491,60 @@ span {
 /* ------End Project--------- */
 
 /* ------Contact------- */
-
-.contact {
-  display: flex;
+#contact h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 30px;
 }
 .contact-container {
-  font-size: 30px;
-  width: 40vw;
-  margin-left: 8vw;
-  margin-top: 50px;
+  display: flex;
+  gap: 200px;
+  margin-bottom: 50px;
 }
+
 .wapp,
 .email,
 .location {
-  margin: 50px;
+  margin: 50px 130px;
+  color: white;
+}
+.vertical-line{
+  width: 0.1px;
+  border: 1px solid white;
 }
 .message {
   display: flex;
   flex-direction: column;
-  width: 30vw;
-  height: 60vh;
+  width: 400px;
+  height: 300px;
   margin-left: 100px;
   background-color: white;
   border-radius: 10px;
 }
 
-.msg-title {
-  font-size: 14px;
-  border-radius: 5px;
-  width: 110px;
-  height: 30px;
-  background-color: red;
-  align-items: center;
-  margin: 10px 12vw;
-}
-.name-sec,
-.msg-sec {
-  margin: 10px 30px;
-}
-label {
+
+.message label {
   color: black;
+  margin-left: 40px;
+  margin-top: 20px;
 }
-input {
+.message input {
   border-radius: 15px;
-  width: 20vw;
+  width: 300px;
   height: 30px;
-  margin: 10px 0;
+  margin-left: 40px;
 }
 textarea {
-  width: 22vw;
-  height: 20vh;
+  width: 300px;
+  height: 100px;
   border-radius: 10px;
-  margin: 10px 0;
+  margin-left: 40px;
 }
 .submit {
-  align-content: center;
-  width: 5vw;
-  margin: 0 13vw;
+  width: 100px;
+  margin: 15px 150px;
   border-radius: 5px;
   color: black;
 }
